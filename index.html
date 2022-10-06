@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Clima</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>  
+    
+    <select class="form-select" aria-label="Default select example" id="selector" onchange="seleccionar(this)">
+        <option >Abrir este menu para seleccionar una ciudad</option>
+        <option value="ahuachapan">Ahuachapán</option>
+        <option value="cabañas">Cabañas</option>
+        <option value="chalatenango">Chalatenango</option>
+        <option value="Cuscatlán">Cuscatlán</option>
+        <option value="la libertad">La Libertad</option>
+        <option value="la paz">La Paz</option>
+        <option value="la union">La Unión</option>
+        <option value="morazan">Morazán</option>
+        <option value="san miguel">San Miguel</option>
+        <option value="san salvador">San Salvador</option>
+        <option value="san vicente">San Vicente</option>
+        <option value="santa ana">Santa Ana</option>
+        <option value="sonsonate">Sonsonate</option>
+        <option value="usulutan">Usulután</option>
+            
+    </select>
+    
+    <br>
+    <br>
+
+    <div id="contenedor">
+        <div id="caja1">
+            <h1 id="temperatura-valor"></h1>
+            <h1 id="temperatura-descripcion"></h1>
+        </div>
+        <div id="caja2">
+            <h2 id="ubicacion"></h2>
+            <img id="icono-animado" src="" alt="" height="128" width="128">
+        </div>
+        <div id="caja3">
+            <h3>Veloc. del Viento</h3>
+            <h1 id="viento-velocidad"></h1>
+        </div>
+    </div>
+    <script src="appp.js"></script>
+</body>
+</html>
